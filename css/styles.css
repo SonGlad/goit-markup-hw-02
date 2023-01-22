@@ -24,20 +24,22 @@ a{
 ul{
     list-style: none;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
     /* Header */
 
-.link{
- color: var(--color-navy-blue);
-}
-.link:hover, 
-.link:focus{
-    color: var(--color-ocean);
-}
-.link:active{
-    color: var(--color-ocean);
-    text-decoration: underline;
-}
 .header-link-text{
     font-family: 'Raleway';
     font-weight: 800;
@@ -47,6 +49,10 @@ ul{
     text-transform: uppercase;
     color: var(--color-navy-blue);
 }
+.header-link-text:hover,
+.header-link-text:focus{
+    color: var(--color-iris);
+}
 .ascend{
     color: var(--color-iris);
 }
@@ -55,11 +61,24 @@ ul{
     line-height: calc(24 / 16);
     color: var(--color-navy-blue);
 }
+.header-nav-links .link:hover, 
+.header-nav-links .link:focus,
+.header-nav-links .link:active{
+    color: var(--color-ocean);
+    text-decoration: underline;
+}
+
 .header-contact-links a {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--color-slate);
+}
+.header-contact-links .contact-link:hover,
+.header-contact-links .contact-link:focus,
+.header-contact-links .contact-link:active{
+    color: var(--color-ocean);
+    text-decoration: underline;
 }
 
     /* Effective solution sections */
@@ -81,8 +100,11 @@ ul{
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--color-white);
+    border-radius: 4px;
 }
-.button:hover{
+.button:hover,
+.button:focus,
+.button:active{
     background: var(--color-ocean);
 }
 
@@ -122,6 +144,26 @@ ul{
 .team-section-desc > li{
     background: var(--color-white);
 }
+
+/* Portfolio */
+
+.btn button{
+    background-color: var(--color-cloud);
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    color: var(--color-iris);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    }
+.btn button:hover,
+.btn button:focus,
+.btn button:active{
+    background-color: var(--color-ocean);
+    color: var(--color-white);
+}
+
 /* Footer */
 
 .footer{
@@ -135,6 +177,10 @@ ul{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-cloud);
+}
+.footer-link:hover,
+.footer-link:focus{
+    color: var(--color-iris);
 }
 .ascend-footer{
     color: var(--color-iris);
