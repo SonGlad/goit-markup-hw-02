@@ -38,7 +38,12 @@ ul{
     overflow: hidden;
   }
 
-    /* Header */
+/* Header */
+
+.header{
+    background: var(--color-white);
+    
+}
 
 .header-link-text{
     font-family: 'Raleway';
@@ -56,6 +61,8 @@ ul{
 .ascend{
     color: var(--color-iris);
 }
+/* Header Nav Link */
+
 .header-nav-links a {
     font-size: 16px;
     line-height: calc(24 / 16);
@@ -67,6 +74,8 @@ ul{
     color: var(--color-ocean);
     text-decoration: underline;
 }
+
+/* Header Contact Links */
 
 .header-contact-links a {
     font-weight: 400;
@@ -81,7 +90,7 @@ ul{
     text-decoration: underline;
 }
 
-    /* Effective solution sections */
+/* Effective solution sections */
 
 .main-effective-section{
     background: var(--color-navy-blue);
@@ -110,12 +119,12 @@ ul{
 
 /* Startegy section */
 
-.desc-titel{
+.strategy-section-desc .desc-titel{
     font-size: 20px;
     line-height: calc(24 / 20);
     color: var(--color-navy-blue);
 }
-.desc-text{
+.strategy-section-desc .desc-text{
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
@@ -147,6 +156,12 @@ ul{
 
 /* Portfolio */
 
+.portfolio{
+    background: var(--color-white);
+}
+
+/* Portfolio buttons */
+
 .btn button{
     background-color: var(--color-cloud);
     cursor: pointer;
@@ -162,6 +177,23 @@ ul{
 .btn button:active{
     background-color: var(--color-ocean);
     color: var(--color-white);
+}
+
+/* Portfolio IMG */
+
+.card > li{
+    background: var(--color-white)  
+}
+.card .card-titel{
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    color: var(--color-grey)
+}
+.card .card-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    color: var(--color-slate);
 }
 
 /* Footer */
