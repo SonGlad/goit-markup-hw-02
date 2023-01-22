@@ -36,7 +36,7 @@ ul{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 /* Header */
 
@@ -54,13 +54,14 @@ ul{
     text-transform: uppercase;
     color: var(--color-navy-blue);
 }
+.ascend{
+    color: var(--color-iris);
+}
 .header-link-text:hover,
 .header-link-text:focus{
     color: var(--color-iris);
 }
-.ascend{
-    color: var(--color-iris);
-}
+
 /* Header Nav Link */
 
 .header-nav-links a {
@@ -68,24 +69,25 @@ ul{
     line-height: calc(24 / 16);
     color: var(--color-navy-blue);
 }
-.header-nav-links .link:hover, 
-.header-nav-links .link:focus,
-.header-nav-links .link:active{
+.link:hover, 
+.link:focus{
     color: var(--color-ocean);
     text-decoration: underline;
 }
 
 /* Header Contact Links */
 
-.header-contact-links a {
+.header-contact{
+    font-style: normal;
+}
+.contact-link{
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--color-slate);
 }
-.header-contact-links .contact-link:hover,
-.header-contact-links .contact-link:focus,
-.header-contact-links .contact-link:active{
+.contact-link:hover,
+.contact-link:focus{
     color: var(--color-ocean);
     text-decoration: underline;
 }
@@ -110,6 +112,8 @@ ul{
     line-height: calc(24 / 16);
     color: var(--color-white);
     border-radius: 4px;
+    font-family: inherit;
+    font-weight: inherit;
 }
 .button:hover,
 .button:focus,
@@ -119,12 +123,12 @@ ul{
 
 /* Startegy section */
 
-.strategy-section-desc .desc-titel{
+.desc-titel{
     font-size: 20px;
     line-height: calc(24 / 20);
     color: var(--color-navy-blue);
 }
-.strategy-section-desc .desc-text{
+.desc-text{
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
@@ -150,7 +154,7 @@ ul{
     text-transform: capitalize;
     color: var(--color-navy-blue);
 }
-.team-section-desc > li{
+.team-desc{
     background: var(--color-white);
 }
 
@@ -162,7 +166,7 @@ ul{
 
 /* Portfolio buttons */
 
-.btn button{
+.btn-desc{
     background-color: var(--color-cloud);
     cursor: pointer;
     letter-spacing: 0.04em;
@@ -171,25 +175,27 @@ ul{
     color: var(--color-iris);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    }
-.btn button:hover,
-.btn button:focus,
-.btn button:active{
+    font-family: inherit;
+    font-weight: inherit;
+}
+.btn-desc:focus,
+.btn-desc:hover,
+.btn-desc:active{
     background-color: var(--color-ocean);
     color: var(--color-white);
 }
 
 /* Portfolio IMG */
 
-.card > li{
+.card-sec{
     background: var(--color-white)  
 }
-.card .card-titel{
+.card-titel{
     font-size: 20px;
     line-height: calc(24 / 20);
     color: var(--color-grey)
 }
-.card .card-text{
+.card-text{
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
@@ -210,13 +216,14 @@ ul{
     text-transform: uppercase;
     color: var(--color-cloud);
 }
+.ascend-footer{
+    color: var(--color-iris);
+}
 .footer-link:hover,
 .footer-link:focus{
     color: var(--color-iris);
 }
-.ascend-footer{
-    color: var(--color-iris);
-}
+
 .footer-text{
     font-weight: 400;
     font-size: 16px;
