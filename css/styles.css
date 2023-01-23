@@ -4,7 +4,8 @@ body{
     font-family: 'Roboto';
     font-weight: 500;
     letter-spacing: 0.02em;
- }
+    color: var(--color-navy-blue);
+}
 :root {
 	--color-iris: #4d5ae5;
 	--color-ocean: #404bbf;
@@ -52,7 +53,6 @@ ul{
     line-height: calc(24 / 18);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-navy-blue);
 }
 .ascend{
     color: var(--color-iris);
@@ -67,7 +67,6 @@ ul{
 .header-nav-links a {
     font-size: 16px;
     line-height: calc(24 / 16);
-    color: var(--color-navy-blue);
 }
 .link:hover, 
 .link:focus{
@@ -123,10 +122,9 @@ ul{
 
 /* Startegy section */
 
-.desc-titel{
+.desc-titel-text{
     font-size: 20px;
     line-height: calc(24 / 20);
-    color: var(--color-navy-blue);
 }
 .desc-text{
     font-weight: 400;
@@ -140,7 +138,6 @@ ul{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(40 / 36);
-    color: var(--color-navy-blue);
 }
 /* Our team section */
 
@@ -152,7 +149,6 @@ ul{
     font-size: 36px;
     line-height: calc(40 / 36);
     text-transform: capitalize;
-    color: var(--color-navy-blue);
 }
 .team-desc{
     background: var(--color-white);
@@ -160,7 +156,6 @@ ul{
 .team-desc-headline{
     font-size: 20px;
     line-height: calc(24 / 20);
-    color: var(--color-navy-blue);
 }
 .team-desc-text{
     font-weight: 400;
@@ -199,12 +194,13 @@ ul{
 /* Portfolio IMG */
 
 .card-sec{
-    background: var(--color-white)  
+    background: var(--color-white);
+      
 }
 .card-titel{
     font-size: 20px;
     line-height: calc(24 / 20);
-    color: var(--color-grey)
+    color: var(--color-grey);
 }
 .card-text{
     font-weight: 400;
