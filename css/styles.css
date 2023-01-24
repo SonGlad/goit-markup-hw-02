@@ -58,21 +58,16 @@ ul{
 .ascend{
     color: var(--color-iris);
 }
-.header-link-text:hover,
-.header-link-text:focus{
-    color: var(--color-iris);
-}
 
 /* Header Nav Link */
 
-.header-nav-links a {
+.nav-link{
     font-size: 16px;
     line-height: calc(24 / 16);
 }
-.link:hover, 
-.link:focus{
+.nav-link:hover, 
+.nav-link:focus{
     color: var(--color-ocean);
-    text-decoration: underline;
 }
 
 /* Header Contact Links */
@@ -89,7 +84,6 @@ ul{
 .contact-link:hover,
 .contact-link:focus{
     color: var(--color-ocean);
-    text-decoration: underline;
 }
 
 /* Effective solution sections */
@@ -111,6 +105,7 @@ ul{
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--color-white);
+    border: none;
     border-radius: 4px;
     font-family: inherit;
     font-weight: inherit;
@@ -225,10 +220,6 @@ ul{
     color: var(--color-cloud);
 }
 .ascend-footer{
-    color: var(--color-iris);
-}
-.footer-link:hover,
-.footer-link:focus{
     color: var(--color-iris);
 }
 
